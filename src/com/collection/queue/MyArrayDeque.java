@@ -16,7 +16,7 @@ public class MyArrayDeque<E> implements Queue<E> {
     }
 
     public MyArrayDeque(int defaultCapacity) {
-        elements =(E[]) new Object[];
+        elements =(E[]) new Object[defaultCapacity];
         head = tail =0;
     }
 
@@ -27,7 +27,7 @@ public class MyArrayDeque<E> implements Queue<E> {
 
     @Override
     public boolean isEmpty() {
-        return head == tail;;
+        return head == tail;
     }
 
     @Override
