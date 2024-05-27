@@ -32,5 +32,4 @@ public class QueueMain {
         }
         System.out.println(queue.toString());
     }
-
 }

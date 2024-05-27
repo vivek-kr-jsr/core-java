@@ -40,6 +40,7 @@ public class ArrayList<E> implements List<E>{
         return null;
     }
 
+
     @Override
     public void forEach(Consumer<? super E> action) {
         // Implement forEach logic here
