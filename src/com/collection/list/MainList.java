@@ -1,13 +1,40 @@
 package com.collection.list;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.ListIterator;
 
 public class MainList {
     public static void main(String args[]){
 
-        java.util.List<Integer> list1 = Arrays.asList(1, 2, 8, 7, 6, 5, 3, 4);
+        java.util.List<Integer> list1 = new ArrayList<>();
+        ArrayList<Integer> list2 = new ArrayList<>();
+
+        list2.add(2,4);
+
+        list1.add(1);
+        list1.add(2);
+        list1.add(3);
+        list1.add(1);
+        list1.add(2);
+        list1.add(3);
+        list1.add(1);
+        list1.add(2);
+        list1.add(3);
+        list1.add(1);
+        list1.add(2);
+        list1.add(3);
+        list1.add(1);
+        list1.add(2);
+        list1.add(3);
+        list1.add(1);
+        list1.add(2);
+        list1.add(3);
+        list1.add(1);
+        list1.add(2);
+        list1.add(3);
+
 
         ListIterator<Integer> it = list1.listIterator();
         System.out.println("------1. ListIterator-------");
