@@ -1,4 +1,4 @@
-package com.java8.lamda;
+package com.java8.lambda;
 
 public class Main {
 

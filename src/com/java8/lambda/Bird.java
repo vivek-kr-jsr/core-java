@@ -1,4 +1,4 @@
-package com.java8.lamda;
+package com.java8.lambda;
 
 @FunctionalInterface
 public interface Bird {

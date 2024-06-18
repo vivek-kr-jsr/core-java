@@ -1,4 +1,4 @@
-package com.java8.lamda.buitin;
+package com.java8.lambda.buitin;
 
 import java.util.function.BiFunction;
 
