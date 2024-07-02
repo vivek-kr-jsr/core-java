@@ -14,9 +14,6 @@ public class UpperCaseValues {
             name = name.toUpperCase();
             System.out.println(name);
         }
-
-
-
     }
 
     public static String getName(){
@@ -26,7 +23,8 @@ public class UpperCaseValues {
 
     public static Optional<?> getOptionalName(){
         String name = null;
-        Optional<String> value = Optional.of("Vivek Kumar");
-                return value;
+        Optional<String> value = null;
+        value = Optional.ofNullable(name);
+        return value;
     }
 }
