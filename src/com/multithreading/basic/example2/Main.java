@@ -8,7 +8,7 @@ public class Main {
         Thread producerThread = new Thread(()->{
             int item = 1;
             try {
-                while (true){
+                while (item<3){
                     sharedResources.producer(item++);
                     //Thread.sleep(150);
                 }
@@ -18,9 +18,9 @@ public class Main {
         });
 
         Thread consumeThread = new Thread(()->{
-
+            int item =0;
             try {
-                while (true){
+                while (item<3){
                     sharedResources.consumer();
                     //Thread.sleep(100);
                 }
