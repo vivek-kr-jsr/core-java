@@ -14,8 +14,9 @@ public class SharedResource {
             Thread.currentThread().interrupt();
             e.printStackTrace();
         } finally {
-            lock.readLock().unlock();
             System.out.println("Producer Read lock released by: " + Thread.currentThread().getName());
+            lock.readLock().unlock();
+
         }
     }
 
@@ -29,8 +30,9 @@ public class SharedResource {
             Thread.currentThread().interrupt();
             e.printStackTrace();
         } finally {
-            lock.writeLock().unlock();
             System.out.println("Consumer Write lock released by: " + Thread.currentThread().getName());
+            lock.writeLock().unlock();
+
         }
     }
 }

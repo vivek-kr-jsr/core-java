@@ -5,7 +5,7 @@ import java.util.concurrent.ThreadFactory;
 public class CustomThreadFactory implements ThreadFactory {
     @Override
     public Thread newThread(Runnable r) {
-        Thread th = newThread(r);
+        Thread th = new Thread(r);
         th.setDaemon(false);
         th.setPriority(Thread.NORM_PRIORITY);
         return th;
